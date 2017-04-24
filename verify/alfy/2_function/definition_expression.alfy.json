@@ -1,0 +1,91 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "sum": {
+               "type": "int",
+               "parameters": [
+                  {
+                     "id": "n1",
+                     "type": "int",
+                     "line": 4,
+                     "symbol": 1
+                  },
+                  {
+                     "id": "n2",
+                     "type": "int",
+                     "line": 5,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 6
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "sum",
+         "value_type": "int"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define_function",
+            "id": "sum",
+            "parameters": [
+               {
+                  "id": "n1",
+                  "type": "int",
+                  "line": 4,
+                  "symbol": 1
+               },
+               {
+                  "id": "n2",
+                  "type": "int",
+                  "line": 5,
+                  "symbol": 1
+               }
+            ],
+            "value_type": "int",
+            "statements": [
+               {
+                  "type": "expression",
+                  "op": "+",
+                  "left": {
+                     "type": "id",
+                     "value": "n1",
+                     "line": 6,
+                     "symbol": 1,
+                     "t": "int"
+                  },
+                  "right": {
+                     "type": "id",
+                     "value": "n2",
+                     "line": 6,
+                     "symbol": 1,
+                     "t": "int"
+                  },
+                  "line": 6,
+                  "symbol": 1,
+                  "t": "int"
+               }
+            ],
+            "line": 6,
+            "symbol": 1
+         }
+      ],
+      "line": 8,
+      "symbol": 0
+   },
+   "error_list": []
+}

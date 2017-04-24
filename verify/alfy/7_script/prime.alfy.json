@@ -1,0 +1,327 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 3
+            },
+            "p": {
+               "type": "logic",
+               "value": {
+                  "type": "value",
+                  "t": "logic",
+                  "value": true,
+                  "line": 7,
+                  "symbol": 0
+               },
+               "line": 7
+            },
+            "i": {
+               "type": "int",
+               "line": 13
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "int",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "attribution",
+            "to": {
+               "type": "id",
+               "value": "n",
+               "line": 5,
+               "symbol": 0,
+               "t": "int"
+            },
+            "from": {
+               "type": "valueof",
+               "function": {
+                  "id": "read",
+                  "library": []
+               },
+               "parameters": {},
+               "line": 5,
+               "symbol": 0,
+               "t": ""
+            },
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "p",
+                  "type": "logic",
+                  "value": {
+                     "type": "value",
+                     "t": "logic",
+                     "value": true,
+                     "line": 7,
+                     "symbol": 0
+                  },
+                  "line": 7,
+                  "symbol": 0
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         },
+         {
+            "type": "for",
+            "variable": "i",
+            "from": {
+               "type": "value",
+               "t": "int",
+               "value": 2,
+               "line": 9,
+               "symbol": 0
+            },
+            "direction": "to",
+            "to": {
+               "type": "valueof",
+               "function": {
+                  "id": "sqrt",
+                  "library": []
+               },
+               "parameters": {
+                  "number": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 9,
+                     "symbol": 0
+                  }
+               },
+               "line": 9,
+               "symbol": 0,
+               "t": ""
+            },
+            "step": {
+               "type": "value",
+               "t": "int",
+               "value": 1,
+               "line": 9,
+               "symbol": 0
+            },
+            "statements": [
+               {
+                  "type": "if",
+                  "expression": {
+                     "type": "expression",
+                     "op": "=",
+                     "left": {
+                        "type": "expression",
+                        "op": "mod",
+                        "left": {
+                           "type": "id",
+                           "value": "n",
+                           "line": 10,
+                           "symbol": 0,
+                           "t": "int"
+                        },
+                        "right": {
+                           "type": "id",
+                           "value": "i",
+                           "line": 10,
+                           "symbol": 0,
+                           "t": "int"
+                        },
+                        "line": 10,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 10,
+                        "symbol": 0
+                     },
+                     "line": 10,
+                     "symbol": 0,
+                     "t": "logic"
+                  },
+                  "then": [
+                     {
+                        "type": "attribution",
+                        "to": {
+                           "type": "id",
+                           "value": "p",
+                           "line": 11,
+                           "symbol": 0,
+                           "t": "logic"
+                        },
+                        "from": {
+                           "type": "value",
+                           "t": "logic",
+                           "value": false,
+                           "line": 11,
+                           "symbol": 0
+                        },
+                        "line": 11,
+                        "symbol": 0
+                     }
+                  ],
+                  "line": 12,
+                  "symbol": 0
+               }
+            ],
+            "line": 13,
+            "symbol": 0
+         },
+         {
+            "type": "if",
+            "expression": {
+               "type": "id",
+               "value": "p",
+               "line": 15,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "then": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "id",
+                           "value": "n",
+                           "line": 16,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "string",
+                           "value": " is prime",
+                           "line": 16,
+                           "symbol": 0
+                        },
+                        "line": 16,
+                        "symbol": 0
+                     }
+                  },
+                  "line": 16,
+                  "symbol": 0,
+                  "t": ""
+               }
+            ],
+            "else": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "id",
+                           "value": "n",
+                           "line": 18,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "string",
+                           "value": " is not prime",
+                           "line": 18,
+                           "symbol": 0
+                        },
+                        "line": 18,
+                        "symbol": 0
+                     }
+                  },
+                  "line": 18,
+                  "symbol": 0,
+                  "t": ""
+               }
+            ],
+            "line": 19,
+            "symbol": 0
+         }
+      ],
+      "line": 19,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 5,
+         "elements": {
+            "id": "read"
+         },
+         "text": "Undefined function read"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 5,
+         "elements": {
+            "op": "is",
+            "to": "int",
+            "from": ""
+         },
+         "text": "Type expression error int is "
+      },
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 9,
+         "elements": {
+            "id": "sqrt"
+         },
+         "text": "Undefined function sqrt"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 13,
+         "elements": {
+            "expression": "int",
+            "op": "for",
+            "element": "variable"
+         },
+         "text": "for variable expression is undefined instead of symbol/real/int"
+      },
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 16,
+         "elements": {
+            "id": "write"
+         },
+         "text": "Undefined function write"
+      },
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 18,
+         "elements": {
+            "id": "write"
+         },
+         "text": "Undefined function write"
+      }
+   ]
+}

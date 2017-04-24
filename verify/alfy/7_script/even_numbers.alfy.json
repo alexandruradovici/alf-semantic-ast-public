@@ -1,0 +1,309 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "value": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 2,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 2,
+                     "line": 3,
+                     "symbol": 0
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "for",
+            "variable": "n",
+            "from": {
+               "type": "value",
+               "t": "int",
+               "value": 2,
+               "line": 5,
+               "symbol": 0
+            },
+            "direction": "to",
+            "to": {
+               "type": "value",
+               "t": "int",
+               "value": 1000,
+               "line": 5,
+               "symbol": 0
+            },
+            "step": {
+               "type": "value",
+               "t": "int",
+               "value": 2,
+               "line": 5,
+               "symbol": 0
+            },
+            "statements": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 6,
+                        "symbol": 0
+                     }
+                  },
+                  "line": 6,
+                  "symbol": 0,
+                  "t": ""
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         },
+         {
+            "type": "while",
+            "expression": {
+               "type": "expression",
+               "op": "<=",
+               "left": {
+                  "type": "id",
+                  "value": "n",
+                  "line": 9,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "right": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 1000,
+                  "line": 9,
+                  "symbol": 0
+               },
+               "line": 9,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "statements": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 10,
+                        "symbol": 0
+                     }
+                  },
+                  "line": 10,
+                  "symbol": 0,
+                  "t": ""
+               },
+               {
+                  "type": "attribution",
+                  "to": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 11,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "from": {
+                     "type": "expression",
+                     "op": "+",
+                     "left": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 11,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 2,
+                        "line": 11,
+                        "symbol": 0
+                     },
+                     "line": 11,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 11,
+                  "symbol": 0
+               }
+            ],
+            "line": 12,
+            "symbol": 0
+         },
+         {
+            "type": "attribution",
+            "to": {
+               "type": "id",
+               "value": "n",
+               "line": 14,
+               "symbol": 0,
+               "t": "int"
+            },
+            "from": {
+               "type": "value",
+               "t": "int",
+               "value": 2,
+               "line": 14,
+               "symbol": 0
+            },
+            "line": 14,
+            "symbol": 0
+         },
+         {
+            "type": "repeat",
+            "expression": {
+               "type": "expression",
+               "op": "<=",
+               "left": {
+                  "type": "id",
+                  "value": "n",
+                  "line": 19,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "right": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 1000,
+                  "line": 19,
+                  "symbol": 0
+               },
+               "line": 19,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "statements": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 17,
+                        "symbol": 0
+                     }
+                  },
+                  "line": 17,
+                  "symbol": 0,
+                  "t": ""
+               },
+               {
+                  "type": "attribution",
+                  "to": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 18,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "from": {
+                     "type": "expression",
+                     "op": "+",
+                     "left": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 18,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 2,
+                        "line": 18,
+                        "symbol": 0
+                     },
+                     "line": 18,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 18,
+                  "symbol": 0
+               }
+            ],
+            "line": 19,
+            "symbol": 0
+         }
+      ],
+      "line": 19,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 6,
+         "elements": {
+            "id": "write"
+         },
+         "text": "Undefined function write"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 7,
+         "elements": {
+            "expression": "int",
+            "op": "for",
+            "element": "variable"
+         },
+         "text": "for variable expression is undefined instead of symbol/real/int"
+      },
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 10,
+         "elements": {
+            "id": "write"
+         },
+         "text": "Undefined function write"
+      },
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 17,
+         "elements": {
+            "id": "write"
+         },
+         "text": "Undefined function write"
+      }
+   ]
+}

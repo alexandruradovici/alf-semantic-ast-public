@@ -1,0 +1,66 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 5
+            },
+            "r": {
+               "type": "real",
+               "line": 5
+            },
+            "l": {
+               "type": "logic",
+               "line": 5
+            },
+            "s": {
+               "type": "string",
+               "line": 5
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "int",
+                  "line": 2,
+                  "symbol": 0
+               },
+               {
+                  "id": "r",
+                  "type": "real",
+                  "line": 3,
+                  "symbol": 0
+               },
+               {
+                  "id": "l",
+                  "type": "logic",
+                  "line": 4,
+                  "symbol": 0
+               },
+               {
+                  "id": "s",
+                  "type": "string",
+                  "line": 5,
+                  "symbol": 0
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

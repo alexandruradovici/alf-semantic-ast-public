@@ -1,0 +1,102 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "e": {
+               "type": "int",
+               "value": {
+                  "type": "expression",
+                  "op": "+",
+                  "left": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 20,
+                     "line": 2,
+                     "symbol": 0
+                  },
+                  "right": {
+                     "type": "expression",
+                     "op": "*",
+                     "left": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 3,
+                        "line": 2,
+                        "symbol": 0
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 5,
+                        "line": 2,
+                        "symbol": 0
+                     },
+                     "line": 2,
+                     "symbol": 0
+                  },
+                  "line": 2,
+                  "symbol": 0
+               },
+               "line": 2
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "e",
+                  "type": "int",
+                  "value": {
+                     "type": "expression",
+                     "op": "+",
+                     "left": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 20,
+                        "line": 2,
+                        "symbol": 0
+                     },
+                     "right": {
+                        "type": "expression",
+                        "op": "*",
+                        "left": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 3,
+                           "line": 2,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 5,
+                           "line": 2,
+                           "symbol": 0
+                        },
+                        "line": 2,
+                        "symbol": 0
+                     },
+                     "line": 2,
+                     "symbol": 0
+                  },
+                  "line": 2,
+                  "symbol": 0
+               }
+            ],
+            "line": 2,
+            "symbol": 0
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

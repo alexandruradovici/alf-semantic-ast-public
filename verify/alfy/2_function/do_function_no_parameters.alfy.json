@@ -1,0 +1,38 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "valueof",
+            "function": {
+               "id": "getpid",
+               "library": []
+            },
+            "parameters": {},
+            "line": 3,
+            "symbol": 0,
+            "t": ""
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 3,
+         "elements": {
+            "id": "getpid"
+         },
+         "text": "Undefined function getpid"
+      }
+   ]
+}

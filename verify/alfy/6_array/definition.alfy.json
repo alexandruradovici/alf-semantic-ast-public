@@ -1,0 +1,20 @@
+{
+   "symbol_table": {},
+   "ast": {},
+   "error_list": [
+      {
+         "type": "SYNTAX",
+         "line": 3,
+         "elements": {
+            "error": "syntax",
+            "line": 3,
+            "text": "to",
+            "token": "DIRECTION",
+            "expected": [
+               "'TO'"
+            ]
+         },
+         "text": "to"
+      }
+   ]
+}

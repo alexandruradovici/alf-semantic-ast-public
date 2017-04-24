@@ -1,0 +1,132 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "int",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "if",
+            "expression": {
+               "type": "expression",
+               "op": ">",
+               "left": {
+                  "type": "id",
+                  "value": "n",
+                  "line": 5,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "right": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 2,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "then": [
+               {
+                  "type": "attribution",
+                  "to": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 6,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "from": {
+                     "type": "expression",
+                     "op": "+",
+                     "left": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 6,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 1,
+                        "line": 6,
+                        "symbol": 0
+                     },
+                     "line": 6,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 6,
+                  "symbol": 0
+               }
+            ],
+            "else": [
+               {
+                  "type": "attribution",
+                  "to": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 8,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "from": {
+                     "type": "expression",
+                     "op": "*",
+                     "left": {
+                        "type": "id",
+                        "value": "n",
+                        "line": 8,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 1,
+                        "line": 8,
+                        "symbol": 0
+                     },
+                     "line": 8,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 8,
+                  "symbol": 0
+               }
+            ],
+            "line": 9,
+            "symbol": 0
+         }
+      ],
+      "line": 9,
+      "symbol": 0
+   },
+   "error_list": []
+}

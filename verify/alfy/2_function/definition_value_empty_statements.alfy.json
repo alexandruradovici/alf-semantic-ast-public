@@ -1,0 +1,77 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "print": {
+               "type": "empty",
+               "parameters": [
+                  {
+                     "id": "text",
+                     "type": "string",
+                     "line": 3,
+                     "symbol": 1
+                  }
+               ],
+               "symbol": 1,
+               "line": 6
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "print",
+         "value_type": "empty"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define_function",
+            "id": "print",
+            "parameters": [
+               {
+                  "id": "text",
+                  "type": "string",
+                  "line": 3,
+                  "symbol": 1
+               }
+            ],
+            "value_type": "empty",
+            "statements": [
+               {
+                  "type": "attribution",
+                  "to": {
+                     "type": "id",
+                     "value": "text",
+                     "line": 5,
+                     "symbol": 1,
+                     "t": "string"
+                  },
+                  "from": {
+                     "type": "value",
+                     "t": "string",
+                     "value": "",
+                     "line": 5,
+                     "symbol": 1
+                  },
+                  "line": 5,
+                  "symbol": 1
+               }
+            ],
+            "line": 6,
+            "symbol": 1
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": []
+}

@@ -1,0 +1,110 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "s": {
+               "type": "school",
+               "line": 8
+            }
+         },
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "line": 6,
+               "elements": [
+                  {
+                     "type": "int",
+                     "id": "type",
+                     "line": 5
+                  },
+                  {
+                     "type": "logic",
+                     "id": "private",
+                     "line": 4
+                  },
+                  {
+                     "type": "string",
+                     "id": "name",
+                     "line": 3
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "struct",
+            "id": "school",
+            "elements": [
+               {
+                  "id": "type",
+                  "type": "int",
+                  "line": 5,
+                  "symbol": 0
+               },
+               {
+                  "id": "private",
+                  "type": "logic",
+                  "line": 4,
+                  "symbol": 0
+               },
+               {
+                  "id": "name",
+                  "type": "string",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 6,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "s",
+                  "type": "school",
+                  "line": 8,
+                  "symbol": 0
+               }
+            ],
+            "line": 8,
+            "symbol": 0
+         },
+         {
+            "type": "attribution",
+            "to": {
+               "type": "element_of_struct",
+               "struct": {
+                  "type": "id",
+                  "value": "s",
+                  "line": 10,
+                  "symbol": 0,
+                  "t": "school"
+               },
+               "element": "name",
+               "line": 10,
+               "symbol": 0,
+               "t": "string"
+            },
+            "from": {
+               "type": "value",
+               "t": "string",
+               "value": "The new name for the school",
+               "line": 10,
+               "symbol": 0
+            },
+            "line": 10,
+            "symbol": 0
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
+   "error_list": []
+}
