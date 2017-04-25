@@ -11,7 +11,7 @@
                   "line": 2,
                   "symbol": 0
                },
-               "line": 5
+               "line": 2
             },
             "r": {
                "type": "real",
@@ -22,7 +22,7 @@
                   "line": 3,
                   "symbol": 0
                },
-               "line": 5
+               "line": 3
             },
             "l": {
                "type": "logic",
@@ -33,7 +33,7 @@
                   "line": 4,
                   "symbol": 0
                },
-               "line": 5
+               "line": 4
             },
             "s": {
                "type": "string",
