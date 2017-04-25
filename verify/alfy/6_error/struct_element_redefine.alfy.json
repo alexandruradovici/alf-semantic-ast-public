@@ -11,7 +11,7 @@
                   {
                      "type": "string",
                      "id": "title",
-                     "line": 5
+                     "line": 4
                   }
                ]
             }
@@ -29,13 +29,13 @@
                {
                   "id": "title",
                   "type": "string",
-                  "line": 5,
+                  "line": 4,
                   "symbol": 0
                },
                {
                   "id": "title",
                   "type": "string",
-                  "line": 4,
+                  "line": 5,
                   "symbol": 0
                }
             ],
@@ -49,7 +49,7 @@
    "error_list": [
       {
          "type": "STRUCT_ELEMENT_ALREADY_DEFINED",
-         "line": 4,
+         "line": 5,
          "elements": {
             "struct": "s",
             "element": "title"

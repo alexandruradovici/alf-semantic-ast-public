@@ -14,9 +14,9 @@
                "line": 6,
                "elements": [
                   {
-                     "type": "int",
-                     "id": "type",
-                     "line": 5
+                     "type": "string",
+                     "id": "name",
+                     "line": 3
                   },
                   {
                      "type": "logic",
@@ -24,9 +24,9 @@
                      "line": 4
                   },
                   {
-                     "type": "string",
-                     "id": "name",
-                     "line": 3
+                     "type": "int",
+                     "id": "type",
+                     "line": 5
                   }
                ]
             },
@@ -49,9 +49,9 @@
             "id": "school",
             "elements": [
                {
-                  "id": "type",
-                  "type": "int",
-                  "line": 5,
+                  "id": "name",
+                  "type": "string",
+                  "line": 3,
                   "symbol": 0
                },
                {
@@ -61,9 +61,9 @@
                   "symbol": 0
                },
                {
-                  "id": "name",
-                  "type": "string",
-                  "line": 3,
+                  "id": "type",
+                  "type": "int",
+                  "line": 5,
                   "symbol": 0
                }
             ],
