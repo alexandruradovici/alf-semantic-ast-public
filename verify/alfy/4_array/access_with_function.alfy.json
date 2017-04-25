@@ -1,0 +1,107 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "list",
+               "line": 4
+            }
+         },
+         "functions": {},
+         "types": {
+            "list": {
+               "type": "array",
+               "line": 2,
+               "elements_type": "string",
+               "from": 1,
+               "to": 9
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "array",
+            "id": "list",
+            "elements_type": "string",
+            "from": 1,
+            "to": 9,
+            "line": 2,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "v",
+                  "type": "list",
+                  "line": 4,
+                  "symbol": 0
+               }
+            ],
+            "line": 4,
+            "symbol": 0
+         },
+         {
+            "type": "attribution",
+            "to": {
+               "type": "element_of_array",
+               "array": {
+                  "type": "id",
+                  "value": "v",
+                  "line": 6,
+                  "symbol": 0,
+                  "t": "list"
+               },
+               "index": {
+                  "type": "valueof",
+                  "function": {
+                     "id": "position",
+                     "library": []
+                  },
+                  "parameters": {},
+                  "line": 6,
+                  "symbol": 0,
+                  "t": ""
+               },
+               "line": 6,
+               "symbol": 0,
+               "t": "string"
+            },
+            "from": {
+               "type": "value",
+               "t": "string",
+               "value": "The new name for the school",
+               "line": 6,
+               "symbol": 0
+            },
+            "line": 6,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 6,
+         "elements": {
+            "id": "position"
+         },
+         "text": "Undefined function position"
+      },
+      {
+         "type": "ARRAY_INDEX_TYPE",
+         "line": 6,
+         "elements": {
+            "array": "list",
+            "index": ""
+         },
+         "text": "Array (list) index must be int or symbol"
+      }
+   ]
+}

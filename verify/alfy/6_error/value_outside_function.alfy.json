@@ -1,0 +1,48 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "value_of_function",
+            "value": {
+               "type": "value",
+               "t": "int",
+               "value": 90,
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0,
+            "t": ""
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "VALUE_OUTSIDE_FUNCTION",
+         "line": 3,
+         "elements": {},
+         "text": "value is used out of function"
+      },
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 3,
+         "elements": {
+            "op": "value",
+            "required": "",
+            "value": ""
+         },
+         "text": "Type expression error value "
+      }
+   ]
+}

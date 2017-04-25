@@ -1,0 +1,50 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "expression",
+            "op": "+",
+            "left": {
+               "type": "value",
+               "t": "logic",
+               "value": false,
+               "line": 3,
+               "symbol": 0
+            },
+            "right": {
+               "type": "value",
+               "t": "int",
+               "value": 90,
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0,
+            "t": ""
+         }
+      ],
+      "line": 4,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_EXPRESSION",
+         "line": 3,
+         "elements": {
+            "left": "logic",
+            "right": "int",
+            "op": "+"
+         },
+         "text": "Type expression error logic + int"
+      }
+   ]
+}

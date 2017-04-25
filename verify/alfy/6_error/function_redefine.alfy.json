@@ -1,0 +1,98 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "f": {
+               "type": "int",
+               "parameters": [],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "f",
+         "value_type": "int"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "f",
+         "value_type": "int"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define_function",
+            "id": "f",
+            "parameters": [],
+            "value_type": "int",
+            "statements": [
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 190,
+                     "line": 3,
+                     "symbol": 1
+                  },
+                  "line": 3,
+                  "symbol": 1,
+                  "t": ""
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         },
+         {
+            "type": "define_function",
+            "id": "f",
+            "parameters": [],
+            "value_type": "int",
+            "statements": [
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 190,
+                     "line": 5,
+                     "symbol": 2
+                  },
+                  "line": 5,
+                  "symbol": 2,
+                  "t": ""
+               }
+            ],
+            "line": 5,
+            "symbol": 2
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "FUNCTION_ALREADY_DEFINED",
+         "line": 5,
+         "elements": {
+            "function": "f"
+         },
+         "text": "function f is already defined"
+      }
+   ]
+}

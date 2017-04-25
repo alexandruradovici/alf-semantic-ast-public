@@ -1,0 +1,6 @@
+{Attribution error}
+
+define a => int;
+define s => string;
+
+a = s;

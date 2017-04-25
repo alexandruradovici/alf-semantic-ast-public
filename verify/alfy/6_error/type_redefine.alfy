@@ -1,0 +1,10 @@
+{Type redefinition}
+
+struct s 
+	define title => string
+end;
+
+struct s 
+	define title => string
+end;
+

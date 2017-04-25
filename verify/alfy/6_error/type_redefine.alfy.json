@@ -1,0 +1,67 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {
+            "s": {
+               "type": "struct",
+               "line": 5,
+               "elements": [
+                  {
+                     "type": "string",
+                     "id": "title",
+                     "line": 4
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "struct",
+            "id": "s",
+            "elements": [
+               {
+                  "id": "title",
+                  "type": "string",
+                  "line": 4,
+                  "symbol": 0
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "type": "struct",
+            "id": "s",
+            "elements": [
+               {
+                  "id": "title",
+                  "type": "string",
+                  "line": 8,
+                  "symbol": 0
+               }
+            ],
+            "line": 9,
+            "symbol": 0
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_ALREADY_DEFINED",
+         "line": 9,
+         "elements": {
+            "type": "s"
+         },
+         "text": "type s is already defined"
+      }
+   ]
+}

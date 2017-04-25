@@ -1,0 +1,60 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {
+            "s": {
+               "type": "struct",
+               "line": 6,
+               "elements": [
+                  {
+                     "type": "string",
+                     "id": "title",
+                     "line": 5
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "struct",
+            "id": "s",
+            "elements": [
+               {
+                  "id": "title",
+                  "type": "string",
+                  "line": 5,
+                  "symbol": 0
+               },
+               {
+                  "id": "title",
+                  "type": "string",
+                  "line": 4,
+                  "symbol": 0
+               }
+            ],
+            "line": 6,
+            "symbol": 0
+         }
+      ],
+      "line": 8,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "STRUCT_ELEMENT_ALREADY_DEFINED",
+         "line": 4,
+         "elements": {
+            "struct": "s",
+            "element": "title"
+         },
+         "text": "struct's s element title is already defined"
+      }
+   ]
+}

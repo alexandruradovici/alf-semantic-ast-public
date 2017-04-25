@@ -1,0 +1,100 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "s",
+               "line": 7
+            }
+         },
+         "functions": {},
+         "types": {
+            "s": {
+               "type": "struct",
+               "line": 5,
+               "elements": [
+                  {
+                     "type": "string",
+                     "id": "title",
+                     "line": 4
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "struct",
+            "id": "s",
+            "elements": [
+               {
+                  "id": "title",
+                  "type": "string",
+                  "line": 4,
+                  "symbol": 0
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "v",
+                  "type": "s",
+                  "line": 7,
+                  "symbol": 0
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         },
+         {
+            "type": "expression",
+            "op": "=",
+            "left": {
+               "type": "element_of_struct",
+               "struct": {
+                  "type": "id",
+                  "value": "v",
+                  "line": 9,
+                  "symbol": 0,
+                  "t": "s"
+               },
+               "element": "t",
+               "line": 9,
+               "symbol": 0,
+               "t": ""
+            },
+            "right": {
+               "type": "value",
+               "t": "string",
+               "value": "some text",
+               "line": 9,
+               "symbol": 0
+            },
+            "line": 9,
+            "symbol": 0,
+            "t": ""
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "NOT_STRUCT_ELEMENT",
+         "line": 9,
+         "elements": {
+            "struct": "s",
+            "element": "t"
+         },
+         "text": "t is not a struct's s element"
+      }
+   ]
+}

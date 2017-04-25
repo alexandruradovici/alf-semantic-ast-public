@@ -1,0 +1,97 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "l": {
+               "type": "a",
+               "line": 5
+            }
+         },
+         "functions": {},
+         "types": {
+            "a": {
+               "type": "array",
+               "line": 3,
+               "elements_type": "string",
+               "from": 1,
+               "to": 9
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "array",
+            "id": "a",
+            "elements_type": "string",
+            "from": 1,
+            "to": 9,
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "l",
+                  "type": "a",
+                  "line": 5,
+                  "symbol": 0
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "type": "expression",
+            "op": "=",
+            "left": {
+               "type": "element_of_array",
+               "array": {
+                  "type": "id",
+                  "value": "l",
+                  "line": 7,
+                  "symbol": 0,
+                  "t": "a"
+               },
+               "index": {
+                  "type": "value",
+                  "t": "string",
+                  "value": "text",
+                  "line": 7,
+                  "symbol": 0
+               },
+               "line": 7,
+               "symbol": 0,
+               "t": "string"
+            },
+            "right": {
+               "type": "value",
+               "t": "string",
+               "value": "text",
+               "line": 7,
+               "symbol": 0
+            },
+            "line": 7,
+            "symbol": 0,
+            "t": "logic"
+         }
+      ],
+      "line": 9,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "ARRAY_INDEX_TYPE",
+         "line": 7,
+         "elements": {
+            "array": "a",
+            "index": "string"
+         },
+         "text": "Array (a) index must be int or symbol"
+      }
+   ]
+}

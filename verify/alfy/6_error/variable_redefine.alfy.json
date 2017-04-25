@@ -1,0 +1,79 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "a": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "a",
+                  "type": "int",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "expression",
+            "op": "=",
+            "left": {
+               "type": "id",
+               "value": "a",
+               "line": 5,
+               "symbol": 0,
+               "t": "int"
+            },
+            "right": {
+               "type": "value",
+               "t": "int",
+               "value": 190,
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0,
+            "t": "logic"
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "a",
+                  "type": "int",
+                  "line": 7,
+                  "symbol": 0
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 8,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "VARIABLE_ALREADY_DEFINED",
+         "line": 7,
+         "elements": {
+            "variable": "a"
+         },
+         "text": "variable a is already defined"
+      }
+   ]
+}

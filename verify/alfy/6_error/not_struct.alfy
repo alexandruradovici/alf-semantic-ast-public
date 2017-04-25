@@ -1,0 +1,6 @@
+{Not a struct}
+
+define v => string;
+
+v element t = "some text";
+

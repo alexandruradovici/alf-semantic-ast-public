@@ -1,0 +1,46 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "valueof",
+            "function": {
+               "id": "print",
+               "library": []
+            },
+            "parameters": {
+               "text": {
+                  "type": "value",
+                  "t": "string",
+                  "value": "text to write",
+                  "line": 3,
+                  "symbol": 0
+               }
+            },
+            "line": 3,
+            "symbol": 0,
+            "t": ""
+         }
+      ],
+      "line": 4,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "UNDEFINED_FUNCTION",
+         "line": 3,
+         "elements": {
+            "id": "print"
+         },
+         "text": "Undefined function print"
+      }
+   ]
+}

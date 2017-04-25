@@ -1,0 +1,7 @@
+{Variable redefinition}
+
+define a => int;
+
+a = 190;
+
+define a => int;

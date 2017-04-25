@@ -1,0 +1,139 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "list_of_schools": {
+               "type": "list",
+               "line": 10
+            }
+         },
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "line": 6,
+               "elements": [
+                  {
+                     "type": "int",
+                     "id": "type",
+                     "line": 5
+                  },
+                  {
+                     "type": "logic",
+                     "id": "private",
+                     "line": 4
+                  },
+                  {
+                     "type": "string",
+                     "id": "name",
+                     "line": 3
+                  }
+               ]
+            },
+            "list": {
+               "type": "array",
+               "line": 8,
+               "elements_type": "school",
+               "from": 1,
+               "to": 9
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "struct",
+            "id": "school",
+            "elements": [
+               {
+                  "id": "type",
+                  "type": "int",
+                  "line": 5,
+                  "symbol": 0
+               },
+               {
+                  "id": "private",
+                  "type": "logic",
+                  "line": 4,
+                  "symbol": 0
+               },
+               {
+                  "id": "name",
+                  "type": "string",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 6,
+            "symbol": 0
+         },
+         {
+            "type": "array",
+            "id": "list",
+            "elements_type": "school",
+            "from": 1,
+            "to": 9,
+            "line": 8,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "list_of_schools",
+                  "type": "list",
+                  "line": 10,
+                  "symbol": 0
+               }
+            ],
+            "line": 10,
+            "symbol": 0
+         },
+         {
+            "type": "attribution",
+            "to": {
+               "type": "element_of_struct",
+               "struct": {
+                  "type": "element_of_array",
+                  "array": {
+                     "type": "id",
+                     "value": "list_of_schools",
+                     "line": 12,
+                     "symbol": 0,
+                     "t": "list"
+                  },
+                  "index": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 1,
+                     "line": 12,
+                     "symbol": 0
+                  },
+                  "line": 12,
+                  "symbol": 0,
+                  "t": "school"
+               },
+               "element": "name",
+               "line": 12,
+               "symbol": 0,
+               "t": "string"
+            },
+            "from": {
+               "type": "value",
+               "t": "string",
+               "value": "School",
+               "line": 12,
+               "symbol": 0
+            },
+            "line": 12,
+            "symbol": 0
+         }
+      ],
+      "line": 13,
+      "symbol": 0
+   },
+   "error_list": []
+}

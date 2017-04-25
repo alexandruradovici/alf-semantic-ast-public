@@ -1,0 +1,79 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "symbol",
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "v",
+                  "type": "symbol",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "expression",
+            "op": "=",
+            "left": {
+               "type": "element_of_array",
+               "array": {
+                  "type": "id",
+                  "value": "v",
+                  "line": 5,
+                  "symbol": 0,
+                  "t": "symbol"
+               },
+               "index": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 1,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0,
+               "t": ""
+            },
+            "right": {
+               "type": "value",
+               "t": "string",
+               "value": "some text",
+               "line": 5,
+               "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0,
+            "t": ""
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "NOT_ARRAY",
+         "line": 5,
+         "elements": {
+            "type": "symbol"
+         },
+         "text": "symbol is not an array"
+      }
+   ]
+}

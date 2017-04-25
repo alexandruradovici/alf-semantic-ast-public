@@ -1,0 +1,46 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {
+            "a": {
+               "type": "array",
+               "line": 3,
+               "elements_type": "string",
+               "from": 90,
+               "to": 45
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "array",
+            "id": "a",
+            "elements_type": "string",
+            "from": 90,
+            "to": 45,
+            "line": 3,
+            "symbol": 0
+         }
+      ],
+      "line": 4,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "ARRAY_INDEX_VALUE",
+         "line": 3,
+         "elements": {
+            "array": "a",
+            "low_index": 90,
+            "high_index": 45
+         },
+         "text": "Array index lower value (90) must be smaller that the upper value (45)"
+      }
+   ]
+}

@@ -1,0 +1,10 @@
+{Not a struct element}
+
+struct s 
+	define title => string,
+end;
+
+define v => s;
+
+v element t = "some text";
+

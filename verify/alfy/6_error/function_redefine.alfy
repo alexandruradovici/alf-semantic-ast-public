@@ -1,0 +1,5 @@
+{Function redefinition}
+
+define f | value int as value 190;
+
+define f | value int as value 190;
