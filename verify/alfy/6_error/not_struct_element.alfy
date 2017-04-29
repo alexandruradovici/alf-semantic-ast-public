@@ -7,4 +7,3 @@ end;
 define v => s;
 
 v element t = "some text";
-

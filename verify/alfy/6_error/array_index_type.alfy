@@ -5,4 +5,3 @@ array a of string from 1 to 9;
 define l => a;
 
 l ("text") = "text";
-

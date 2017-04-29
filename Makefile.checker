@@ -8,7 +8,7 @@ run:
 	@cd verify && ./run_all.sh ../main.js
 
 pack:
-	zip -r alfy.zip verify/ Makefile.checker\
+	zip -r semantic.zip verify/ Makefile.checker\
 		README.md 
 
 clean:

@@ -22,4 +22,3 @@ if valueof prime with n is v parameters then
 else
 	do write with text is v+" is not prime" parameters;
 end;
-

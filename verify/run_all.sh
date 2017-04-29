@@ -23,7 +23,7 @@ passed=0
 failed=0
 total=0
 
-mv alfy.js alfy.j
+rm alfy.js
 
 echo '{ "node":true, "loopfunc": true, "esnext":true }' > .jshintrc
 if [ ! -f `basename "$1"` ];
@@ -32,10 +32,11 @@ then
 elif ! jshint *.js;
 then
 	echo "Please review your code, you have jshint errors"
+elif ! jison alfy.jison 
+then
+	echo "Please verify your grammar for errors"
 else
-	mv alfy.j alfy.js
 	cd -
-
 	for folder in alfy/*
 	do
 		if [ -d $folder ];

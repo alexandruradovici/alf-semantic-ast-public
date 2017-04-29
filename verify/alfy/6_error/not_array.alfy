@@ -3,4 +3,3 @@
 define v => symbol;
 
 v(1) = "some text";
-

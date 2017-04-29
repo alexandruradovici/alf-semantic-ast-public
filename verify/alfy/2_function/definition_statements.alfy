@@ -7,4 +7,3 @@ define sum | n1 => int
 begin
 	n1 + n2;
 end;
-

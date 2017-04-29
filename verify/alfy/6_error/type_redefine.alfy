@@ -7,4 +7,3 @@ end;
 struct s 
 	define title => string
 end;
-

@@ -4,4 +4,3 @@ struct s
 	define title => string,
 	define title => string
 end;
-
