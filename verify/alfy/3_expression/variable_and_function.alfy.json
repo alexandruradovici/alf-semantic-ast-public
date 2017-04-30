@@ -1,0 +1,133 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "functions": {
+            "number": {
+               "type": "int",
+               "parameters": [],
+               "symbol": 1,
+               "line": 5
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "number",
+         "value_type": "int"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "int",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "define_function",
+            "id": "number",
+            "parameters": [],
+            "value_type": "int",
+            "statements": [
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 3,
+                     "line": 5,
+                     "symbol": 1
+                  },
+                  "line": 5,
+                  "symbol": 1,
+                  "t": "int"
+               }
+            ],
+            "line": 5,
+            "symbol": 1
+         },
+         {
+            "type": "attribution",
+            "to": {
+               "type": "id",
+               "value": "n",
+               "line": 7,
+               "symbol": 0,
+               "t": "int"
+            },
+            "from": {
+               "type": "value",
+               "t": "int",
+               "value": 3,
+               "line": 7,
+               "symbol": 0
+            },
+            "line": 7,
+            "symbol": 0
+         },
+         {
+            "type": "expression",
+            "op": "+",
+            "left": {
+               "type": "expression",
+               "op": "+",
+               "left": {
+                  "type": "id",
+                  "value": "n",
+                  "line": 8,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "right": {
+                  "type": "valueof",
+                  "function": {
+                     "id": "number",
+                     "library": []
+                  },
+                  "parameters": {},
+                  "line": 8,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "line": 8,
+               "symbol": 0,
+               "t": "int"
+            },
+            "right": {
+               "type": "value",
+               "t": "string",
+               "value": " text",
+               "line": 8,
+               "symbol": 0
+            },
+            "line": 8,
+            "symbol": 0,
+            "t": "string"
+         }
+      ],
+      "line": 8,
+      "symbol": 0
+   },
+   "error_list": []
+}

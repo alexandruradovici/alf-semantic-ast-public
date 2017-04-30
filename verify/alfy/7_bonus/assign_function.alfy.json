@@ -1,0 +1,274 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "real",
+               "value": {
+                  "type": "valueof",
+                  "function": {
+                     "id": "power",
+                     "library": []
+                  },
+                  "parameters": {
+                     "n": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 6,
+                        "line": 3,
+                        "symbol": 0
+                     },
+                     "a": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 6,
+                        "line": 3,
+                        "symbol": 0
+                     }
+                  },
+                  "line": 3,
+                  "symbol": 0,
+                  "t": "real"
+               },
+               "line": 3
+            }
+         },
+         "functions": {
+            "power": {
+               "type": "real",
+               "parameters": [
+                  {
+                     "id": "a",
+                     "type": "real",
+                     "value": {
+                        "type": "value",
+                        "t": "real",
+                        "value": 0,
+                        "line": 5,
+                        "symbol": 1
+                     },
+                     "line": 5
+                  },
+                  {
+                     "id": "n",
+                     "type": "int",
+                     "value": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 5,
+                        "symbol": 1
+                     },
+                     "line": 5
+                  }
+               ],
+               "symbol": 1,
+               "line": 12
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {
+            "p": {
+               "type": "int",
+               "value": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 1,
+                  "line": 7,
+                  "symbol": 1
+               },
+               "line": 7
+            },
+            "i": {
+               "type": "int",
+               "line": 10
+            }
+         },
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "power",
+         "value_type": "real"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "v",
+                  "type": "",
+                  "value": {
+                     "type": "valueof",
+                     "function": {
+                        "id": "power",
+                        "library": []
+                     },
+                     "parameters": {
+                        "n": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 6,
+                           "line": 3,
+                           "symbol": 0
+                        },
+                        "a": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 6,
+                           "line": 3,
+                           "symbol": 0
+                        }
+                     },
+                     "line": 3,
+                     "symbol": 0,
+                     "t": "real"
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "define_function",
+            "id": "power",
+            "parameters": [
+               {
+                  "id": "a",
+                  "type": "real",
+                  "value": {
+                     "type": "value",
+                     "t": "real",
+                     "value": 0,
+                     "line": 5,
+                     "symbol": 1
+                  },
+                  "line": 5
+               },
+               {
+                  "id": "n",
+                  "type": "int",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 0,
+                     "line": 5,
+                     "symbol": 1
+                  },
+                  "line": 5
+               }
+            ],
+            "value_type": "real",
+            "statements": [
+               {
+                  "type": "define",
+                  "elements": [
+                     {
+                        "id": "p",
+                        "type": "",
+                        "value": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 1,
+                           "line": 7,
+                           "symbol": 1
+                        },
+                        "line": 7
+                     }
+                  ],
+                  "line": 7,
+                  "symbol": 1
+               },
+               {
+                  "type": "for",
+                  "variable": "i",
+                  "from": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 1,
+                     "line": 8,
+                     "symbol": 1
+                  },
+                  "direction": "to",
+                  "to": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 8,
+                     "symbol": 1,
+                     "t": "int"
+                  },
+                  "step": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 1,
+                     "line": 8,
+                     "symbol": 1
+                  },
+                  "statements": [
+                     {
+                        "type": "attribution",
+                        "to": {
+                           "type": "id",
+                           "value": "p",
+                           "line": 9,
+                           "symbol": 1,
+                           "t": "int"
+                        },
+                        "from": {
+                           "type": "expression",
+                           "op": "*",
+                           "left": {
+                              "type": "id",
+                              "value": "p",
+                              "line": 9,
+                              "symbol": 1,
+                              "t": "int"
+                           },
+                           "right": {
+                              "type": "id",
+                              "value": "a",
+                              "line": 9,
+                              "symbol": 1,
+                              "t": "real"
+                           },
+                           "line": 9,
+                           "symbol": 1,
+                           "t": "real"
+                        },
+                        "line": 9,
+                        "symbol": 1
+                     }
+                  ],
+                  "line": 10,
+                  "symbol": 1
+               },
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "id",
+                     "value": "p",
+                     "line": 11,
+                     "symbol": 1,
+                     "t": "int"
+                  },
+                  "line": 11,
+                  "symbol": 1,
+                  "t": "real"
+               }
+            ],
+            "line": 12,
+            "symbol": 1
+         }
+      ],
+      "line": 12,
+      "symbol": 0
+   },
+   "error_list": []
+}

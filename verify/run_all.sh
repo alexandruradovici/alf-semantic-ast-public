@@ -141,7 +141,7 @@ fi
 
 echo 'Tests: ' $passed '/' $total
 echo 'Points: '$POINTS
-echo 'Mark without penalities: '`echo $(($POINTS * 2)) | sed 's/..$/.&/'`
+echo 'Mark without penalities: '`echo $(($POINTS+10)) | sed 's/..$/.&/'`
 
 if [ "$passed" != "$total" ];
 then

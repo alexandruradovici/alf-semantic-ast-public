@@ -1,0 +1,66 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "x": {
+               "type": "int",
+               "value": {
+                  "type": "id",
+                  "value": "y",
+                  "line": 3,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "line": 3
+            },
+            "y": {
+               "type": "int",
+               "line": 5
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "x",
+                  "type": "",
+                  "value": {
+                     "type": "id",
+                     "value": "y",
+                     "line": 3,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "y",
+                  "type": "int",
+                  "line": 5,
+                  "symbol": 0
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

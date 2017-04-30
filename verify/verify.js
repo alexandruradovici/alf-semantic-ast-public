@@ -103,7 +103,7 @@ if (verify === 'error')
 					{
 						return _.isEqualWith (originalError, verifyError, function (original, verify, key)
 						{
-							if (key === 'expected' || key === 'token')
+							if (key === 'expected' || key === 'token' || key === 'text')
 							{
 								return true;
 							}

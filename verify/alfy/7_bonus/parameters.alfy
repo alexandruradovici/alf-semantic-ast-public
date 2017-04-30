@@ -1,0 +1,12 @@
+{Function parameters}
+
+define power | a is 0.0 n is 0 value real as
+begin
+	define p is 1;
+	for i from 1 to n step 1 run
+		p is p * a;
+	end;
+	value p;
+end;
+
+valueof power with a is 6 n is 6 parameters;

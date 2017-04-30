@@ -1,0 +1,53 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "expression",
+            "op": "+",
+            "left": {
+               "type": "expression",
+               "op": "+",
+               "left": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 2,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "right": {
+                  "type": "value",
+                  "t": "real",
+                  "value": 3.5,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "line": 3,
+               "symbol": 0,
+               "t": "real"
+            },
+            "right": {
+               "type": "value",
+               "t": "symbol",
+               "value": "e",
+               "line": 3,
+               "symbol": 0
+            },
+            "line": 3,
+            "symbol": 0,
+            "t": "real"
+         }
+      ],
+      "line": 3,
+      "symbol": 0
+   },
+   "error_list": []
+}

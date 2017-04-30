@@ -1,0 +1,211 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n": {
+               "type": "int",
+               "line": 3
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "int",
+                  "line": 3,
+                  "symbol": 0
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "expression",
+            "op": "AND",
+            "left": {
+               "type": "expression",
+               "op": ">",
+               "left": {
+                  "type": "expression",
+                  "op": "/",
+                  "left": {
+                     "type": "expression",
+                     "op": "*",
+                     "left": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 2,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 3,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "line": 5,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 7,
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "line": 5,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "right": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 8,
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "line": 5,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "right": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 10,
+                  "line": 5,
+                  "symbol": 0
+               },
+               "line": 5,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "right": {
+               "type": "expression",
+               "op": "XOR",
+               "left": {
+                  "type": "expression",
+                  "op": "OR",
+                  "left": {
+                     "type": "expression",
+                     "op": "<",
+                     "left": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 7,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "int",
+                           "value": 5,
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "line": 5,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 5,
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "line": 5,
+                     "symbol": 0,
+                     "t": "logic"
+                  },
+                  "right": {
+                     "type": "expression",
+                     "op": "=",
+                     "left": {
+                        "type": "value",
+                        "t": "string",
+                        "value": "test",
+                        "line": 5,
+                        "symbol": 0
+                     },
+                     "right": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "value",
+                           "t": "string",
+                           "value": "te",
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "string",
+                           "value": "st",
+                           "line": 5,
+                           "symbol": 0
+                        },
+                        "line": 5,
+                        "symbol": 0,
+                        "t": "string"
+                     },
+                     "line": 5,
+                     "symbol": 0,
+                     "t": "logic"
+                  },
+                  "line": 5,
+                  "symbol": 0,
+                  "t": "logic"
+               },
+               "right": {
+                  "type": "expression",
+                  "op": "!=",
+                  "left": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 7,
+                     "line": 5,
+                     "symbol": 0
+                  },
+                  "right": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 5,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 5,
+                  "symbol": 0,
+                  "t": "logic"
+               },
+               "line": 5,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "line": 5,
+            "symbol": 0,
+            "t": "logic"
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

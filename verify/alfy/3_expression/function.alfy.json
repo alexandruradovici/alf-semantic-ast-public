@@ -1,0 +1,82 @@
+{
+   "symbol_table": [
+      {
+         "variables": {},
+         "functions": {
+            "number": {
+               "type": "int",
+               "parameters": [],
+               "symbol": 1,
+               "line": 3
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "number",
+         "value_type": "int"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define_function",
+            "id": "number",
+            "parameters": [],
+            "value_type": "int",
+            "statements": [
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 3,
+                     "line": 3,
+                     "symbol": 1
+                  },
+                  "line": 3,
+                  "symbol": 1,
+                  "t": "int"
+               }
+            ],
+            "line": 3,
+            "symbol": 1
+         },
+         {
+            "type": "expression",
+            "op": "+",
+            "left": {
+               "type": "value",
+               "t": "int",
+               "value": 2,
+               "line": 5,
+               "symbol": 0
+            },
+            "right": {
+               "type": "valueof",
+               "function": {
+                  "id": "number",
+                  "library": []
+               },
+               "parameters": {},
+               "line": 5,
+               "symbol": 0,
+               "t": "int"
+            },
+            "line": 5,
+            "symbol": 0,
+            "t": "int"
+         }
+      ],
+      "line": 5,
+      "symbol": 0
+   },
+   "error_list": []
+}

@@ -1,0 +1,134 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "n1": {
+               "type": "",
+               "value": {
+                  "type": "id",
+                  "value": "n2",
+                  "line": 3,
+                  "symbol": 0,
+                  "t": ""
+               },
+               "line": 3
+            },
+            "n2": {
+               "type": "",
+               "value": {
+                  "type": "id",
+                  "value": "n3",
+                  "line": 5,
+                  "symbol": 0,
+                  "t": ""
+               },
+               "line": 5
+            },
+            "n3": {
+               "type": "",
+               "value": {
+                  "type": "id",
+                  "value": "n1",
+                  "line": 7,
+                  "symbol": 0,
+                  "t": ""
+               },
+               "line": 7
+            }
+         },
+         "functions": {},
+         "types": {},
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n1",
+                  "type": "",
+                  "value": {
+                     "type": "id",
+                     "value": "n2",
+                     "line": 3,
+                     "symbol": 0,
+                     "t": ""
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n2",
+                  "type": "",
+                  "value": {
+                     "type": "id",
+                     "value": "n3",
+                     "line": 5,
+                     "symbol": 0,
+                     "t": ""
+                  },
+                  "line": 5
+               }
+            ],
+            "line": 5,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n3",
+                  "type": "",
+                  "value": {
+                     "type": "id",
+                     "value": "n1",
+                     "line": 7,
+                     "symbol": 0,
+                     "t": ""
+                  },
+                  "line": 7
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         }
+      ],
+      "line": 7,
+      "symbol": 0
+   },
+   "error_list": [
+      {
+         "type": "TYPE_RESOLUTION",
+         "line": 3,
+         "elements": {
+            "variable": "n1"
+         },
+         "text": "Unable to resolve type variable n1"
+      },
+      {
+         "type": "TYPE_RESOLUTION",
+         "line": 5,
+         "elements": {
+            "variable": "n2"
+         },
+         "text": "Unable to resolve type variable n2"
+      },
+      {
+         "type": "TYPE_RESOLUTION",
+         "line": 7,
+         "elements": {
+            "variable": "n3"
+         },
+         "text": "Unable to resolve type variable n3"
+      }
+   ]
+}

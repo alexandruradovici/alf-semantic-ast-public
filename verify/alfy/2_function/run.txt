@@ -1,2 +1,2 @@
 Function definition and run
-10
+5

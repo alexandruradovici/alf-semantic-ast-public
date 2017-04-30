@@ -1,0 +1,11 @@
+{Struct element}
+
+struct school
+	define name => string,
+	define private => logic,
+	define type => int
+end;
+
+define s => school;
+
+define t is s element type;

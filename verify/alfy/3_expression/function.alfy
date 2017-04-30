@@ -1,0 +1,5 @@
+{Expression with function}
+
+define number | value int as value 3;
+
+2+valueof number;

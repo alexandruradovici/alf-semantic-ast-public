@@ -1,10 +1,14 @@
 {Prime number}
 
-define n => int;
+define v is 768687;
 
-n is valueof read;
+define sqrt | number is 0 value real as value number;
+define read | value int as value v;
+define write | text is "" value string as;
 
-define p => logic is true;
+define n is valueof read;
+
+define p is true;
 
 for i from 2 to valueof sqrt with number is n parameters step 1 run
 	if n mod i = 0 then

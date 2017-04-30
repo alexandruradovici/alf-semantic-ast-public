@@ -1,0 +1,8 @@
+{Expression with variable and function}
+
+define n => int;
+
+define number | value int as value 3;
+
+n is 3;
+n+valueof number + " text";

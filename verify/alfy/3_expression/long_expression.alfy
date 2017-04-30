@@ -1,0 +1,5 @@
+{Long expression}
+
+define n => int;
+
+(2+3)*7/8 > 10 and (7+5) < 5 or "test" = "te"+"st" xor 7 != n;

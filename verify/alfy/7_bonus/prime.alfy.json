@@ -1,0 +1,465 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "v": {
+               "type": "int",
+               "value": {
+                  "type": "value",
+                  "t": "int",
+                  "value": 768687,
+                  "line": 3,
+                  "symbol": 0
+               },
+               "line": 3
+            },
+            "n": {
+               "type": "int",
+               "value": {
+                  "type": "valueof",
+                  "function": {
+                     "id": "read",
+                     "library": []
+                  },
+                  "parameters": {},
+                  "line": 9,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "line": 9
+            },
+            "p": {
+               "type": "logic",
+               "value": {
+                  "type": "value",
+                  "t": "logic",
+                  "value": true,
+                  "line": 11,
+                  "symbol": 0
+               },
+               "line": 11
+            },
+            "i": {
+               "type": "int",
+               "line": 17
+            }
+         },
+         "functions": {
+            "sqrt": {
+               "type": "real",
+               "parameters": [
+                  {
+                     "id": "number",
+                     "type": "int",
+                     "value": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 5,
+                        "symbol": 1
+                     },
+                     "line": 5
+                  }
+               ],
+               "symbol": 1,
+               "line": 5
+            },
+            "read": {
+               "type": "int",
+               "parameters": [],
+               "symbol": 2,
+               "line": 6
+            },
+            "write": {
+               "type": "string",
+               "parameters": [
+                  {
+                     "id": "text",
+                     "type": "string",
+                     "value": {
+                        "type": "value",
+                        "t": "string",
+                        "value": "",
+                        "line": 7,
+                        "symbol": 3
+                     },
+                     "line": 7
+                  }
+               ],
+               "symbol": 3,
+               "line": 7
+            }
+         },
+         "types": {},
+         "type": "script"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "sqrt",
+         "value_type": "real"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "read",
+         "value_type": "int"
+      },
+      {
+         "variables": {},
+         "functions": {},
+         "types": {},
+         "parent": 0,
+         "type": "function",
+         "fn": "write",
+         "value_type": "string"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "v",
+                  "type": "",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 768687,
+                     "line": 3,
+                     "symbol": 0
+                  },
+                  "line": 3
+               }
+            ],
+            "line": 3,
+            "symbol": 0
+         },
+         {
+            "type": "define_function",
+            "id": "sqrt",
+            "parameters": [
+               {
+                  "id": "number",
+                  "type": "int",
+                  "value": {
+                     "type": "value",
+                     "t": "int",
+                     "value": 0,
+                     "line": 5,
+                     "symbol": 1
+                  },
+                  "line": 5
+               }
+            ],
+            "value_type": "real",
+            "statements": [
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "id",
+                     "value": "number",
+                     "line": 5,
+                     "symbol": 1,
+                     "t": "int"
+                  },
+                  "line": 5,
+                  "symbol": 1,
+                  "t": "real"
+               }
+            ],
+            "line": 5,
+            "symbol": 1
+         },
+         {
+            "type": "define_function",
+            "id": "read",
+            "parameters": [],
+            "value_type": "int",
+            "statements": [
+               {
+                  "type": "value_of_function",
+                  "value": {
+                     "type": "id",
+                     "value": "v",
+                     "line": 6,
+                     "symbol": 2,
+                     "t": "int"
+                  },
+                  "line": 6,
+                  "symbol": 2,
+                  "t": "int"
+               }
+            ],
+            "line": 6,
+            "symbol": 2
+         },
+         {
+            "type": "define_function",
+            "id": "write",
+            "parameters": [
+               {
+                  "id": "text",
+                  "type": "string",
+                  "value": {
+                     "type": "value",
+                     "t": "string",
+                     "value": "",
+                     "line": 7,
+                     "symbol": 3
+                  },
+                  "line": 7
+               }
+            ],
+            "value_type": "string",
+            "statements": [
+               {
+                  "type": "empty",
+                  "line": 7,
+                  "symbol": 3
+               }
+            ],
+            "line": 7,
+            "symbol": 3
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "n",
+                  "type": "",
+                  "value": {
+                     "type": "valueof",
+                     "function": {
+                        "id": "read",
+                        "library": []
+                     },
+                     "parameters": {},
+                     "line": 9,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 9
+               }
+            ],
+            "line": 9,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "p",
+                  "type": "",
+                  "value": {
+                     "type": "value",
+                     "t": "logic",
+                     "value": true,
+                     "line": 11,
+                     "symbol": 0
+                  },
+                  "line": 11
+               }
+            ],
+            "line": 11,
+            "symbol": 0
+         },
+         {
+            "type": "for",
+            "variable": "i",
+            "from": {
+               "type": "value",
+               "t": "int",
+               "value": 2,
+               "line": 13,
+               "symbol": 0
+            },
+            "direction": "to",
+            "to": {
+               "type": "valueof",
+               "function": {
+                  "id": "sqrt",
+                  "library": []
+               },
+               "parameters": {
+                  "number": {
+                     "type": "id",
+                     "value": "n",
+                     "line": 13,
+                     "symbol": 0,
+                     "t": "int"
+                  }
+               },
+               "line": 13,
+               "symbol": 0,
+               "t": "real"
+            },
+            "step": {
+               "type": "value",
+               "t": "int",
+               "value": 1,
+               "line": 13,
+               "symbol": 0
+            },
+            "statements": [
+               {
+                  "type": "if",
+                  "expression": {
+                     "type": "expression",
+                     "op": "=",
+                     "left": {
+                        "type": "expression",
+                        "op": "mod",
+                        "left": {
+                           "type": "id",
+                           "value": "n",
+                           "line": 14,
+                           "symbol": 0,
+                           "t": "int"
+                        },
+                        "right": {
+                           "type": "id",
+                           "value": "i",
+                           "line": 14,
+                           "symbol": 0,
+                           "t": "int"
+                        },
+                        "line": 14,
+                        "symbol": 0,
+                        "t": "int"
+                     },
+                     "right": {
+                        "type": "value",
+                        "t": "int",
+                        "value": 0,
+                        "line": 14,
+                        "symbol": 0
+                     },
+                     "line": 14,
+                     "symbol": 0,
+                     "t": "logic"
+                  },
+                  "then": [
+                     {
+                        "type": "attribution",
+                        "to": {
+                           "type": "id",
+                           "value": "p",
+                           "line": 15,
+                           "symbol": 0,
+                           "t": "logic"
+                        },
+                        "from": {
+                           "type": "value",
+                           "t": "logic",
+                           "value": false,
+                           "line": 15,
+                           "symbol": 0
+                        },
+                        "line": 15,
+                        "symbol": 0
+                     }
+                  ],
+                  "line": 16,
+                  "symbol": 0
+               }
+            ],
+            "line": 17,
+            "symbol": 0
+         },
+         {
+            "type": "if",
+            "expression": {
+               "type": "id",
+               "value": "p",
+               "line": 19,
+               "symbol": 0,
+               "t": "logic"
+            },
+            "then": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "id",
+                           "value": "n",
+                           "line": 20,
+                           "symbol": 0,
+                           "t": "int"
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "string",
+                           "value": " is prime",
+                           "line": 20,
+                           "symbol": 0
+                        },
+                        "line": 20,
+                        "symbol": 0,
+                        "t": "string"
+                     }
+                  },
+                  "line": 20,
+                  "symbol": 0,
+                  "t": "string"
+               }
+            ],
+            "else": [
+               {
+                  "type": "valueof",
+                  "function": {
+                     "id": "write",
+                     "library": []
+                  },
+                  "parameters": {
+                     "text": {
+                        "type": "expression",
+                        "op": "+",
+                        "left": {
+                           "type": "id",
+                           "value": "n",
+                           "line": 22,
+                           "symbol": 0,
+                           "t": "int"
+                        },
+                        "right": {
+                           "type": "value",
+                           "t": "string",
+                           "value": " is not prime",
+                           "line": 22,
+                           "symbol": 0
+                        },
+                        "line": 22,
+                        "symbol": 0,
+                        "t": "string"
+                     }
+                  },
+                  "line": 22,
+                  "symbol": 0,
+                  "t": "string"
+               }
+            ],
+            "line": 23,
+            "symbol": 0
+         }
+      ],
+      "line": 23,
+      "symbol": 0
+   },
+   "error_list": []
+}

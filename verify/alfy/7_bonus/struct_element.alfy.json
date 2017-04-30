@@ -1,0 +1,128 @@
+{
+   "symbol_table": [
+      {
+         "variables": {
+            "s": {
+               "type": "school",
+               "line": 9
+            },
+            "t": {
+               "type": "int",
+               "value": {
+                  "type": "element_of_struct",
+                  "struct": {
+                     "type": "id",
+                     "value": "s",
+                     "line": 11,
+                     "symbol": 0,
+                     "t": "school"
+                  },
+                  "element": "type",
+                  "line": 11,
+                  "symbol": 0,
+                  "t": "int"
+               },
+               "line": 11
+            }
+         },
+         "functions": {},
+         "types": {
+            "school": {
+               "type": "struct",
+               "line": 7,
+               "elements": [
+                  {
+                     "type": "string",
+                     "id": "name",
+                     "line": 4
+                  },
+                  {
+                     "type": "logic",
+                     "id": "private",
+                     "line": 5
+                  },
+                  {
+                     "type": "int",
+                     "id": "type",
+                     "line": 6
+                  }
+               ]
+            }
+         },
+         "type": "script"
+      }
+   ],
+   "ast": {
+      "type": "script",
+      "statements": [
+         {
+            "type": "struct",
+            "id": "school",
+            "elements": [
+               {
+                  "id": "name",
+                  "type": "string",
+                  "line": 4,
+                  "symbol": 0
+               },
+               {
+                  "id": "private",
+                  "type": "logic",
+                  "line": 5,
+                  "symbol": 0
+               },
+               {
+                  "id": "type",
+                  "type": "int",
+                  "line": 6,
+                  "symbol": 0
+               }
+            ],
+            "line": 7,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "s",
+                  "type": "school",
+                  "line": 9,
+                  "symbol": 0
+               }
+            ],
+            "line": 9,
+            "symbol": 0
+         },
+         {
+            "type": "define",
+            "elements": [
+               {
+                  "id": "t",
+                  "type": "",
+                  "value": {
+                     "type": "element_of_struct",
+                     "struct": {
+                        "type": "id",
+                        "value": "s",
+                        "line": 11,
+                        "symbol": 0,
+                        "t": "school"
+                     },
+                     "element": "type",
+                     "line": 11,
+                     "symbol": 0,
+                     "t": "int"
+                  },
+                  "line": 11
+               }
+            ],
+            "line": 11,
+            "symbol": 0
+         }
+      ],
+      "line": 11,
+      "symbol": 0
+   },
+   "error_list": []
+}

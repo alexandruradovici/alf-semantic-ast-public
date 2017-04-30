@@ -1,0 +1,5 @@
+{Assign before define}
+
+define x is y;
+
+define y => int;

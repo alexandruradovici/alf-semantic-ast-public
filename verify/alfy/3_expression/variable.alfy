@@ -1,0 +1,5 @@
+{Expression with variable}
+
+define n => int;
+n is 3;
+n+4+" text";

@@ -1,0 +1,7 @@
+{Undefined type}
+
+define n1 is n2;
+
+define n2 is n3;
+
+define n3 is n1;
