@@ -37,16 +37,19 @@
                      "type": "id",
                      "value": "n1",
                      "line": 8,
-                     "symbol": 1
+                     "symbol": 1,
+                     "t": "int"
                   },
                   "right": {
                      "type": "id",
                      "value": "n2",
                      "line": 8,
-                     "symbol": 1
+                     "symbol": 1,
+                     "t": "int"
                   },
                   "line": 8,
-                  "symbol": 1
+                  "symbol": 1,
+                  "t": "int"
                },
                "line": 8
             }
@@ -94,16 +97,19 @@
                               "type": "id",
                               "value": "n1",
                               "line": 8,
-                              "symbol": 1
+                              "symbol": 1,
+                              "t": "int"
                            },
                            "right": {
                               "type": "id",
                               "value": "n2",
                               "line": 8,
-                              "symbol": 1
+                              "symbol": 1,
+                              "t": "int"
                            },
                            "line": 8,
-                           "symbol": 1
+                           "symbol": 1,
+                           "t": "int"
                         },
                         "line": 8,
                         "symbol": 1

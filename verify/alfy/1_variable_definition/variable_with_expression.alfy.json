@@ -32,10 +32,12 @@
                         "symbol": 0
                      },
                      "line": 2,
-                     "symbol": 0
+                     "symbol": 0,
+                     "t": "int"
                   },
                   "line": 2,
-                  "symbol": 0
+                  "symbol": 0,
+                  "t": "int"
                },
                "line": 2
             }
@@ -82,10 +84,12 @@
                            "symbol": 0
                         },
                         "line": 2,
-                        "symbol": 0
+                        "symbol": 0,
+                        "t": "int"
                      },
                      "line": 2,
-                     "symbol": 0
+                     "symbol": 0,
+                     "t": "int"
                   },
                   "line": 2,
                   "symbol": 0
